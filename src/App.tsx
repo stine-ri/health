@@ -5,7 +5,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp'
 import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
-import Profile from './components/Profile';
+import Profile from './components/Profiles';
 import Service from './components/Service';
 import ChatbotAI from './components/ChatbotAI';
 import CaseStudies from './components/Casestudies';
