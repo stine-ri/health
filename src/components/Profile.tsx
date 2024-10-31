@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css'; // Import CSS for toast notifica
 import styles from '../styles/Profile.module.css';
 import GoBack from './Goback';
 const Profile: React.FC = () => {
-    const [profilePic, setProfilePic] = useState<string | null>(null);
+    const [profilePic, setProfilePic] = useState<string | null>(null);      
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
