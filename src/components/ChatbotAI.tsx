@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from '../styles/ChatbotAI.module.css';
+import styles from '../styles/ChatBotAI.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRobot, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const Chatbot: React.FC = () => {
   const [isChatStarted, setIsChatStarted] = useState(false);
   const [messages, setMessages] = useState<{ text: string; sender: 'user' | 'bot' }[]>([]);

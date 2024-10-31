@@ -6,7 +6,7 @@ import doctor3Image from '../assets/images/Doctor 3.avif';
 import doctor4Image from '../assets/images/Doctor 4.webp';
 import doctor5Image from '../assets/images/Doctor 5.jpg';
 import doctor6Image from '../assets/images/Doctor 6.jpg';
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const Doctors = () => {
   return (
     <React.Fragment>

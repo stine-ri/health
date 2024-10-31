@@ -7,11 +7,11 @@ import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
 import Profile from './components/Profile';
 import Service from './components/Service';
-import ChatbotAI from './components/ChatbotAI';
-import CaseStudies from './components/Casestudies';
+import ChatbotAI from './components/ChatBotAI';
+import CaseStudies from './components/CaseStudies';
 import Diagnostics from './components/Diagnostics';
 import Doctors from './components/Doctors';
-import ClientFeedback from './components/ClientFeedback';
+import ClientFeedback from './components/ClientFeedBack';
 import TrainWithUs from './components/TrainWithUs';
 import './App.css'
 const App: React.FC = () => {

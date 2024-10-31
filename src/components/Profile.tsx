@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify'; // Import toast and ToastContainer
 import 'react-toastify/dist/ReactToastify.css'; // Import CSS for toast notifications
 import styles from '../styles/Profile.module.css';
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const Profile: React.FC = () => {
     const [profilePic, setProfilePic] = useState<string | null>(null);
     const [fullName, setFullName] = useState('');

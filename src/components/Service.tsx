@@ -10,7 +10,7 @@ import workshopImage from '../assets/images/shop.webp';
 import assessmentImage from '../assets/images/sess.jpg';
 import medicationImage from '../assets/images/medical.jpg';
 import telehealthImage from '../assets/images/telehealth.png'; 
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const Services = () => {
   React.createElement; // This ensures React is used.
 

@@ -1,4 +1,4 @@
-import styles from '../styles/ClientFeedback.module.css'; // Import CSS module
+import styles from '../styles/ClientFeedBack.module.css'; // Import CSS module
 
 // Import client images
 import aliceImage from '../assets/images/bo ah.webp'; // Adjust the path as necessary
@@ -9,7 +9,7 @@ import emilyImage from '../assets/images/won.jpg';
 import robertImage from '../assets/images/wook.jpg';
 import jessicaImage from '../assets/images/soo.jpg';
 import davidImage from '../assets/images/Me1.jpg';
-import GoBack from './Goback';
+import GoBack from './GoBack';
 // Sample feedback data with imported images
 const feedbackData = [
   {

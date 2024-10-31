@@ -4,7 +4,7 @@ import visionImage from '../assets/images/vision.png'; // Replace with actual im
 import approachImage from '../assets/images/skills.png'; // Replace with actual image paths
 import processImage from '../assets/images/onboarding.png'; // Replace with actual image paths
 import LeardershipImage from '../assets/images/leadership.png'
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const AboutUs: React.FC = () => {
   return (
     <div className={styles.container}>

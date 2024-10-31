@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from '../styles/Casestudies.module.css';
+import styles from '../styles/CaseStudies.module.css';
 import caseStudy1Image from '../assets/images/soo.jpg';
 import caseStudy2Image from '../assets/images/won.jpg';
 import caseStudy3Image from '../assets/images/Me1.jpg';
 import caseStudy4Image from '../assets/images/sang.jpg';
 import caseStudy5Image from '../assets/images/bo ah.webp';
 import caseStudy6Image from '../assets/images/wook.jpg';
-import GoBack from './Goback';
+import GoBack from './GoBack';
 const CaseStudies = () => {
   return (
     <React.Fragment>
