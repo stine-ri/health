@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import styles from '../styles/GoBack.module.css';
+import styles from '../styles/Goback.module.css';
 
 const GoBack: React.FC = () => {
   const navigate = useNavigate();
