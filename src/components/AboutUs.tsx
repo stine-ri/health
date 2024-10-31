@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/aboutUs.module.css'; // Create this CSS module for styling
+import styles from '../styles/AboutUs.module.css'; // Create this CSS module for styling
 import visionImage from '../assets/images/vision.png'; // Replace with actual image paths
 import approachImage from '../assets/images/skills.png'; // Replace with actual image paths
 import processImage from '../assets/images/onboarding.png'; // Replace with actual image paths

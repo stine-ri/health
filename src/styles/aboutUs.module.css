@@ -1,83 +1,84 @@
 body{
-  margin: 0;
-  padding: 0;
-}
-.container {
-  padding: 40px;
-  margin: 0 auto; /* Centering the container */
-  background-color: #6c2dc7; /* Purple background */
-  color: #ffffff; /* White text for contrast */
-}
-
-.container h1 {
-  font-size: 2.5rem; /* Large header size */
-  color: #ffffff; /* White color for header */
-  text-align: center; /* Centering the title */
-  margin-bottom: 20px; /* Space below the header */
-  color: #f3b600;
-}
-.container h2{
-  color: #f3b600;
-}
-
-.container p {
-  font-size: 20px;
-  color: white;
-}
-
-.welcome {
-  text-align: center; /* Centered welcome message */
-  font-size: 1.5rem; /* Medium size */
-  margin-bottom: 40px; /* Space below welcome */
+    margin: 0;
+    padding: 0; 
+  }
+  .container {
+    padding: 40px;
+    margin: 0 auto; /* Centering the container */
+    background-color: #6c2dc7; /* Purple background */
+    color: #ffffff; /* White text for contrast */
+  }
   
-}
-
-.flexContainer {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space between items */
-  margin-bottom: 40px; /* Space between sections */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
-
-.textSection {
-  flex: 1; /* Take up equal space */
-  padding: 20px; /* Padding inside text section */
-  max-width: 500px; /* Max width to prevent stretching */
-  color: #ffffff; /* White text color for readability */
-}
-
-.imageSection {
-  flex: 1; /* Take up equal space */
-  display: flex; /* Centering image */
-  justify-content: center; /* Centering image */
-  padding-top: 35px;
-}
-
-.image {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 400px; /* Limit max width of images */
-  /* border-radius: 10px;  */
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .flexContainer {
-    flex-direction: column; /* Stack elements on small screens */
-    align-items: center; /* Center align items */
+  .container h1 {
+    font-size: 2.5rem; /* Large header size */
+    color: #ffffff; /* White color for header */
+    text-align: center; /* Centering the title */
+    margin-bottom: 20px; /* Space below the header */
+    color: #f3b600;
   }
-
-  .textSection, .imageSection {
-    max-width: 100%; /* Full width on small screens */
+  .container h2{
+    color: #f3b600;
   }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2rem; /* Smaller header size for mobile */
+  
+  .container p {
+    font-size: 20px;
+    color: white;
   }
-
+  
   .welcome {
-    font-size: 1.2rem; /* Smaller welcome size */
+    text-align: center; /* Centered welcome message */
+    font-size: 1.5rem; /* Medium size */
+    margin-bottom: 40px; /* Space below welcome */
+    
   }
-}
+  
+  .flexContainer {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 40px; /* Space between sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .textSection {
+    flex: 1; /* Take up equal space */
+    padding: 20px; /* Padding inside text section */
+    max-width: 500px; /* Max width to prevent stretching */
+    color: #ffffff; /* White text color for readability */
+  }
+  
+  .imageSection {
+    flex: 1; /* Take up equal space */
+    display: flex; /* Centering image */
+    justify-content: center; /* Centering image */
+    padding-top: 35px;
+  }
+  
+  .image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Limit max width of images */
+    /* border-radius: 10px;  */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .flexContainer {
+      flex-direction: column; /* Stack elements on small screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .textSection, .imageSection {
+      max-width: 100%; /* Full width on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem; /* Smaller header size for mobile */
+    }
+  
+    .welcome {
+      font-size: 1.2rem; /* Smaller welcome size */
+    }
+  }
+  
