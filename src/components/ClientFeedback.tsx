@@ -1,4 +1,4 @@
-import styles from '../styles/ClientFeedBack.module.css'; // Import CSS module
+import styles from '../styles/ClientFeedback.module.css'; // Import CSS module
 
 // Import client images
 import aliceImage from '../assets/images/bo ah.webp'; // Adjust the path as necessary
