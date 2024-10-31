@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #6c2dc7; /* Body background color */
+  padding: 20px;
+}
+
+.contactContainer {
+  background-color: white; /* Container background color */
+  border-radius: 10px; /* Rounded corners */
+  display: flex; /* Flexbox for layout */
+  width: 70%; /* Reduced width of container */
+  max-width: 900px; /* Maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.contactContainer:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.formSection {
+  flex: 1; /* Take up equal space */
+  padding: 20px; /* Padding inside form section */
+}
+
+.infoSection {
+  flex: 1; /* Take up equal space */
+  padding: 20px; /* Padding inside info section */
+  border-left: 2px solid #6c2dc7; /* Vertical divider */
+}
+
+ h1 {
+  color: #6c2dc7; /* Header color */
+  margin-bottom: 20px; /* Space below header */
+  font-weight: bold; /* Bold header */
+}
+.container strong{
+  color: #6c2dc7;
+}
+
+.contactInfo {
+  margin-top: 10px; /* Space above contact info */
+}
+
+.contactInfo p {
+  font-weight: bold; /* Bold text for contact info */
+  margin: 15px 0; /* Increased margin for spacing */
+}
+
+.icon {
+  color: purple; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.input,
+.textarea {
+  width: 80%; /* Width for input boxes */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #6c2dc7; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below inputs */
+}
+
+.textarea {
+  height: 100px; /* Fixed height for textarea */
+}
+
+.button {
+  background-color: #6c2dc7; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 0; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 50px; /* Fully rounded corners */
+  width: 60%; /* Width for button */
+  cursor: pointer; /* Pointer on hover */
+  margin: 20px auto; /* Centering button */
+  display: block; /* Ensuring button takes full width defined */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.button:hover {
+  background-color: #5b25a8; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.socialMedia {
+  display: flex; /* Flexbox for social icons */
+  justify-content: center; /* Center icons */
+  margin-top: 20px; /* Space above social media icons */
+}
+
+.socialIcon {
+  color: purple; /* Icon color */
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Icon size */
+}
+
+.followUs {
+  font-weight: bold; /* Bold for Follow Us */
+  margin-top: 20px; /* Space above Follow Us section */
+  text-align: left; /* Align text to the left */
+  
+}
+
+.socialHandles {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.socialHandles p {
+  margin: 0; /* Remove default margin for paragraph */
+  margin-right: 10px; /* Space between Follow Us and icons */
+}

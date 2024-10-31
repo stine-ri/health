@@ -1,0 +1,24 @@
+.goBackContainer {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 8px 16px;
+  border: 2px solid blue; /* blue outline */
+  border-radius: 20px; /* Rounded edges for the pill shape */
+  color: blue; /* blue color for icon and text */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 80px;
+}
+
+.goBackContainer:hover {
+  background-color: blue; /* blue background on hover */
+  color: white; /* Change text and icon color on hover */
+}
+
+.goBackIcon {
+  margin-right: 8px;
+  font-size: 18px;
+ 
+}

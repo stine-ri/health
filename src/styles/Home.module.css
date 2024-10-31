@@ -1,0 +1,291 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #6c2dc7;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidebar {
+  width: 200px;
+  padding: 30px;
+  background-color: #6c2dc7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  padding-top: 190px;
+}
+
+  .logo {
+   transform: translateX(-170px);
+    width: 100px; /* Smaller size for an icon look */
+    height: 100px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+    border-radius: 50%; /* Optional: Make it circular if the logo is square */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+  
+   
+
+
+.navItem {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.navItem span {
+  margin-left: 10px;
+}
+
+.navItem:hover {
+  color: #ffd700;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.headerLink {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.homeButton {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.homeButton:hover {
+  background-color: #fff;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 10px;
+  text-align: left;
+  
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  padding-top: 100px;
+}
+
+.textContent {
+  max-width: 500px;
+  padding-top: 100px;
+}
+
+.title {
+  color: #ffd700;
+  font-size: 32px;
+}
+.health{
+  color: #fff;
+  font-size: 50px;
+}
+.subtitle {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.button {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navItem {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerLink {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  .sidebar {
+    width: 50%;
+  }
+
+  .navItem {
+    font-size: 15px;
+  }
+
+  .mainContent {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 901px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .navItem {
+    font-size: 16px;
+  }
+
+  .mainContent {
+    gap: 40px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+/* Footer Styles */
+.footer {
+  background-color: #6c2dc7;
+  color: #fff;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  gap: 15px;
+}
+
+/* Copyright Styles */
+.copyright {
+  font-size: 20px; /* Increase font size for readability */
+  color: #ffffff;
+  margin-top: 15px;
+  text-align: center; /* Center-aligns the text */
+  opacity: 0.8; /* Slightly faded look for a subtle effect */
+}
+
+
+.socialMedia {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Centers the icons */
+}
+
+.icon {
+  color: #ffd700;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .footerContent {
+    gap: 10px;
+  }
+
+  .footerLink {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

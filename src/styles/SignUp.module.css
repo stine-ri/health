@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6c2dc7; /* Body background color */
+}
+
+.formSection {
+  background-color: white; /* Container background color */
+  border-radius: 10px;
+  padding: 40px;
+  width: 400px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: purple; /* Icon color */
+  margin-right: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #6c2dc7; /* Border color for input */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #6c2dc7; /* Button background color */
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 50px; /* Border radius for button */
+  width: 80%; /* Center the button */
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  margin: 20px auto; /* Center the button */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+.link {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold; /* Make the link text bold */
+}

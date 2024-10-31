@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6c2dc7; /* Body background color */
+}
+
+.formSection {
+  background-color: white; /* Container background color */
+  border-radius: 10px;
+  padding: 40px;
+  width: 400px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: purple; /* Icon color */
+  margin-right: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #6c2dc7; /* Border color for input */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #6c2dc7; /* Button background color */
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 50px; /* Adjusted border radius to 50 */
+  width: 80%; /* Center the button */
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  margin: 20px auto; /* Center the button */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+.link {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center; /* Center buttons side by side */
+  margin-top: 20px; /* Add some space above */
+}
+
+.socialButton {
+  background-color: transparent;
+  border: 2px solid #6c2dc7; /* Border color for social buttons */
+  border-radius: 5px;
+  padding: 10px 20px; /* Padding for buttons */
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: purple; /* Icon color */
+}
+
+.socialIcon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.googleButton {
+  color: purple; /* Google button text color */
+}
+
+.microsoftButton {
+  color: purple; /* Microsoft button text color */
+}

@@ -1,0 +1,108 @@
+.profilePage {
+  background-color: #6c2dc7; /* Dark purple background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Slightly increased width for two-column layout */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profileHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profilePicLabel {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffcc00;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for the input fields */
+  gap: 1rem;
+}
+.form label{
+  color: #4a206d;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1rem; /* Increase font size for labels */
+  color: #ff66b2; /* Bold pink color for labels */
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border: 1px solid #4a206d;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #6e40c9;
+}
+
+.saveButton {
+  background-color: #ffcc00;
+  color: rgb(17, 17, 17);
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 40%; /* Smaller than inputs */
+  margin: 1rem auto 0 auto; /* Center align button */
+  display: block;
+  text-align: center;
+}
+
+.saveButton:hover {
+  background-color: #ffb300;
+}
