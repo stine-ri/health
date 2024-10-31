@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/SignUp.module.css';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 const SignUp: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();

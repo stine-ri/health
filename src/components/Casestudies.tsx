@@ -6,7 +6,7 @@ import caseStudy3Image from '../assets/images/Me1.jpg';
 import caseStudy4Image from '../assets/images/sang.jpg';
 import caseStudy5Image from '../assets/images/bo ah.webp';
 import caseStudy6Image from '../assets/images/wook.jpg';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 const CaseStudies = () => {
   return (
     <React.Fragment>

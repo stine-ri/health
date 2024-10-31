@@ -3,7 +3,7 @@ import styles from '../styles/ContactUs.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitter, faWhatsapp, faLinkedin, faPinterest } from '@fortawesome/free-brands-svg-icons';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 const ContactUs: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent default form submission

@@ -6,7 +6,7 @@ import diagnostic3Image from '../assets/images/sang.jpg';
 import diagnostic4Image from '../assets/images/soo.jpg';
 import diagnostic5Image from '../assets/images/won.jpg';
 import diagnostic6Image from '../assets/images/Me1.jpg';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 const Diagnostics = () => {
   return (
     <React.Fragment>

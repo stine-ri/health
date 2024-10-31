@@ -3,7 +3,7 @@ import axios from 'axios';
 import styles from '../styles/ChatBotAI.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRobot, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 const Chatbot: React.FC = () => {
   const [isChatStarted, setIsChatStarted] = useState(false);
   const [messages, setMessages] = useState<{ text: string; sender: 'user' | 'bot' }[]>([]);

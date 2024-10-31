@@ -8,7 +8,7 @@ import testimonialImage3 from '../assets/images/moon.jpg';
 import testimonialImage4 from '../assets/images/wook.jpg';
 import testimonialImage5 from '../assets/images/sang.jpg';
 import testimonialImage6 from '../assets/images/soo.jpg';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 // Sample testimonials data
 const testimonialsData = [
   { id: 1, name: "Alice Johnson", feedback: "The training program helped me develop coping strategies that changed my life.", image: testimonialImage1 },

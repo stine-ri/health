@@ -9,7 +9,7 @@ import emilyImage from '../assets/images/won.jpg';
 import robertImage from '../assets/images/wook.jpg';
 import jessicaImage from '../assets/images/soo.jpg';
 import davidImage from '../assets/images/Me1.jpg';
-import GoBack from './GoBack';
+import GoBack from './Goback';
 // Sample feedback data with imported images
 const feedbackData = [
   {
