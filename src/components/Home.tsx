@@ -63,26 +63,6 @@ const Home: React.FC = () => {
             </div>
           </div>
         </main>
-
-        {/* Footer section */}
-        <footer className={styles.footer}>
-          <div className={styles.footerContent}>
-            <div className={styles.socialMedia}>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </div>
-          </div>
-          <div className={styles.copyright}>
-            &copy; 2024 Mental Health Platform. All rights reserved.
-          </div>
-        </footer>
       </div>
     </div>
   );

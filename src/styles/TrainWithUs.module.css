@@ -103,37 +103,4 @@
     background-color: #fce600; /* Lighter yellow on hover */
   }
   
-  /* Media Queries for Responsive Design */
-  @media (max-width: 768px) { /* Tablet and Mobile */
-    .header {
-      font-size: 2em; /* Smaller font size for header */
-    }
-  
-    .inputField,
-    .textareaField {
-      width: 90%; /* Wider input fields on smaller screens */
-    }
-  
-    .submitButton {
-      width: 40%; /* Full width for submit button */
-    }
-  
-    .testimonialsGrid {
-      gap: 10px; /* Smaller gap between testimonials */
-    }
-  }
-  
-  @media (max-width: 480px) { /* Mobile */
-    .header {
-      font-size: 1.8em; /* Further reduced font size */
-    }
-  
-    .testimonialText {
-      font-size: 1em; /* Smaller font size for feedback text */
-    }
-  
-    .clientName {
-      font-size: 0.9em; /* Smaller font size for client name */
-    }
-  }
   

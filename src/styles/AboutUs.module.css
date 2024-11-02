@@ -60,25 +60,4 @@ body{
     /* border-radius: 10px;  */
   }
   
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-    .flexContainer {
-      flex-direction: column; /* Stack elements on small screens */
-      align-items: center; /* Center align items */
-    }
-  
-    .textSection, .imageSection {
-      max-width: 100%; /* Full width on small screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 2rem; /* Smaller header size for mobile */
-    }
-  
-    .welcome {
-      font-size: 1.2rem; /* Smaller welcome size */
-    }
-  }
   
