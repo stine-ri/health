@@ -1,38 +1,31 @@
 /* src/App.css */
+
 .app {
   font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #f0f8ff; /* Light background for the app */
 }
-/* global.css */
-.Toastify__toast-container {
-  z-index: 9999;
+
+@media (max-width: 1024px) {
+  /* Tablet screens and smaller */
+  .app {
+    padding: 15px;
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
 }
 
-.Toastify__toast {
-  background-color: #2b133d;
-  color: white;
-  border-radius: 8px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+@media (max-width: 768px) {
+  /* Mobile screens */
+  .app {
+    padding: 10px;
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
 }
 
-.Toastify__close-button {
-  color: white;
-}
-
-.Toastify__toast--success {
-  background-color: #28a745;
-}
-
-.Toastify__toast--error {
-  background-color: #dc3545;
-}
-
-.Toastify__toast--info {
-  background-color: #17a2b8;
-}
-
-.Toastify__toast--warning {
-  background-color: #ffc107;
+@media (max-width: 480px) {
+  /* Extra small devices (small mobile screens) */
+  .app {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
