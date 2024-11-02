@@ -4,6 +4,7 @@
   background-color: #6c2dc7;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .sidebar {
@@ -15,18 +16,19 @@
   align-items: flex-start;
   gap: 15px;
   padding-top: 190px;
-  position: fixed; /* Fixed position for sidebar */
-  height: 100%; /* Full height */
 }
 
-.logo {
-  transform: translateX(-170px);
-  width: 100px; /* Smaller size for an icon look */
-  height: 100px; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space below the logo */
-  border-radius: 50%; /* Optional: Make it circular if the logo is square */
-  object-fit: cover; /* Ensure the image covers the container without distortion */
-}
+  .logo {
+   transform: translateX(-170px);
+    width: 100px; /* Smaller size for an icon look */
+    height: 100px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+    border-radius: 50%; /* Optional: Make it circular if the logo is square */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+  
+   
+
 
 .navItem {
   display: flex;
@@ -50,7 +52,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 200px; /* Make room for the fixed sidebar */
 }
 
 .header {
@@ -58,6 +59,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+
 }
 
 .headerLink {
@@ -88,6 +90,7 @@
   gap: 40px;
   padding-top: 10px;
   text-align: left;
+  
 }
 
 .image {
@@ -105,12 +108,10 @@
   color: #ffd700;
   font-size: 32px;
 }
-
-.health {
+.health{
   color: #fff;
   font-size: 50px;
 }
-
 .subtitle {
   font-size: 20px;
   color: #ffffff;
@@ -135,17 +136,13 @@
 .button:hover {
   background-color: #fff;
 }
-
 /* Media Queries */
 
 /* Mobile Styles */
 @media (max-width: 600px) {
   .sidebar {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
     padding: 10px;
-    position: static; /* Change to static for mobile */
-    height: auto; /* Allow height to adjust */
-    padding-top: 20px; /* Reduced padding for mobile */
   }
 
   .navItem {
@@ -160,11 +157,6 @@
   .headerLink {
     font-size: 16px;
     margin-left: 0;
-  }
-
-  .content {
-    margin-left: 0; /* Remove margin on mobile */
-    padding: 0 10px; /* Add padding for content */
   }
 
   .mainContent {
@@ -242,7 +234,6 @@
     font-size: 16px;
   }
 }
-
 /* Footer Styles */
 .footer {
   background-color: #6c2dc7;
@@ -267,6 +258,7 @@
   text-align: center; /* Center-aligns the text */
   opacity: 0.8; /* Slightly faded look for a subtle effect */
 }
+
 
 .socialMedia {
   display: flex;
