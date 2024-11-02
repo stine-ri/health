@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faClipboard, faSearch, faComments, faStethoscope, faRobot, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
-import {  faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Home.module.css';
 import servicesImage from '../assets/images/services.png';
 import logo from '../assets/images/yellow.jpg';
