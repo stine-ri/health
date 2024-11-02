@@ -1,3 +1,8 @@
+body {
+  margin: 0; /* Reset body margin */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .container {
   display: flex;
   height: 100vh;
@@ -14,13 +19,14 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  padding-top: 190px;
+  padding-top: 20px; /* Adjusted padding for top spacing */
+  overflow-y: auto; /* Allow vertical scrolling in the sidebar if needed */
 }
 
 .logo {
-  transform: translateX(-170px);
-  width: 100px; /* Smaller size for an icon look */
-  height: 100px; /* Maintain aspect ratio */
+  transform: translateX(-70px); /* Adjusted translation for better fit */
+  width: 80px; /* Slightly smaller logo for mobile */
+  height: 80px; /* Maintain aspect ratio */
   margin-bottom: 20px; /* Space below the logo */
   border-radius: 50%; /* Optional: Make it circular if the logo is square */
   object-fit: cover; /* Ensure the image covers the container without distortion */
@@ -48,6 +54,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow-y: auto; /* Allow vertical scrolling in the content area if needed */
 }
 
 .header {
@@ -139,6 +146,16 @@
     width: 180px; /* Slightly reduce the sidebar width */
   }
 
+  .logo {
+    transform: translateX(-50px); /* Adjust position */
+    width: 70px; /* Adjust logo size */
+    height: 70px;
+  }
+
+  .navItem {
+    font-size: 14px; /* Adjust font size */
+  }
+
   .mainContent {
     flex-direction: column; /* Stack items on smaller screens */
     align-items: center; /* Center items horizontally */
@@ -180,7 +197,7 @@
   }
 
   .sidebar {
-    padding-top: 30px; /* Adjust padding */
+    padding-top: 10px; /* Adjust padding */
   }
 
   .header {
@@ -202,7 +219,6 @@
   }
 
   .mainContent {
-    gap: 20px; /* Reduce gap */
     padding: 20px; /* Add padding */
   }
 }
@@ -213,8 +229,15 @@
     padding: 15px; /* Adjust padding */
   }
 
+  .logo {
+    transform: translateX(0); /* Center logo for mobile */
+    width: 60px; /* Adjust logo size */
+    height: 60px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the logo */
+  }
+
   .navItem {
-    font-size: 14px; /* Reduce font size */
+    font-size: 12px; /* Reduce font size */
   }
 
   .title {
