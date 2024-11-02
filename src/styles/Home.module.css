@@ -4,7 +4,6 @@
   background-color: #6c2dc7;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .sidebar {
@@ -18,17 +17,14 @@
   padding-top: 190px;
 }
 
-  .logo {
-   transform: translateX(-170px);
-    width: 100px; /* Smaller size for an icon look */
-    height: 100px; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the logo */
-    border-radius: 50%; /* Optional: Make it circular if the logo is square */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-  }
-  
-   
-
+.logo {
+  transform: translateX(-170px);
+  width: 100px; /* Smaller size for an icon look */
+  height: 100px; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space below the logo */
+  border-radius: 50%; /* Optional: Make it circular if the logo is square */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+}
 
 .navItem {
   display: flex;
@@ -59,7 +55,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
 }
 
 .headerLink {
@@ -90,7 +85,6 @@
   gap: 40px;
   padding-top: 10px;
   text-align: left;
-  
 }
 
 .image {
@@ -108,10 +102,12 @@
   color: #ffd700;
   font-size: 32px;
 }
-.health{
+
+.health {
   color: #fff;
   font-size: 50px;
 }
+
 .subtitle {
   font-size: 20px;
   color: #ffffff;
@@ -137,3 +133,103 @@
   background-color: #fff;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 180px; /* Slightly reduce the sidebar width */
+  }
+
+  .mainContent {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .image {
+    width: 150px; /* Reduce image size */
+    height: 150px; /* Maintain aspect ratio */
+  }
+
+  .textContent {
+    max-width: 400px; /* Reduce max width for smaller screens */
+    padding-top: 50px; /* Adjust padding */
+  }
+
+  .title {
+    font-size: 28px; /* Adjust title font size */
+  }
+
+  .health {
+    font-size: 40px; /* Adjust health font size */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Adjust subtitle font size */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 20px; /* Reduce gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+    height: auto; /* Allow content to define height */
+  }
+
+  .sidebar {
+    padding-top: 30px; /* Adjust padding */
+  }
+
+  .header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .headerLink {
+    margin-left: 0; /* Remove margin */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+
+  .homeButton {
+    padding: 8px 16px; /* Adjust button size */
+  }
+
+  .button {
+    padding: 8px 16px; /* Adjust button size */
+  }
+
+  .mainContent {
+    gap: 20px; /* Reduce gap */
+    padding: 20px; /* Add padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .navItem {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .title {
+    font-size: 24px; /* Adjust title font size */
+  }
+
+  .health {
+    font-size: 30px; /* Adjust health font size */
+  }
+
+  .subtitle {
+    font-size: 16px; /* Adjust subtitle font size */
+  }
+
+  .mainContent {
+    padding: 10px; /* Reduce padding */
+  }
+}
