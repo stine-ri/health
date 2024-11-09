@@ -53,4 +53,24 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   
+ 
+/* Centered Book Doctor Button */
+.bookButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffd700; /* Yellow color */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
   
+}
+
+.bookButton:hover {
+  background-color: #ffcc00; /* Darker yellow on hover */
+}

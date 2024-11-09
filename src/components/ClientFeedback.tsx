@@ -10,6 +10,7 @@ import robertImage from '../assets/images/wook.jpg';
 import jessicaImage from '../assets/images/soo.jpg';
 import davidImage from '../assets/images/Me1.jpg';
 import GoBack from './Goback';
+
 // Sample feedback data with imported images
 const feedbackData = [
   {
@@ -65,16 +66,19 @@ const feedbackData = [
 // ClientFeedback component
 const ClientFeedback = () => {
   return (
-    <div className={styles.container}>
-      <GoBack/>
-      <h1 className={styles.header}>Client Feedback</h1>
-      <div className={styles.feedbackGrid}>
+    <div className={`${styles.container} px-4 sm:px-8`}>
+      <GoBack />
+      <h1 className={`${styles.header} text-2xl sm:text-3xl lg:text-4xl`}>Client Feedback</h1>
+      <div className={`${styles.feedbackGrid} grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8`}>
         {feedbackData.map((item) => (
-          <div key={item.id} className={styles.feedbackCard}>
-            <p className={styles.feedbackText}>“{item.feedback}”</p>
-            <div className={styles.clientInfo}>
-              <div className={styles.avatar} style={{ backgroundImage: `url(${item.image})` }}></div>
-              <p className={styles.clientName}>{item.name}</p>
+          <div key={item.id} className={`${styles.feedbackCard} bg-white p-4 rounded-lg shadow-md`}>
+            <p className={`${styles.feedbackText} text-sm sm:text-base`}>“{item.feedback}”</p>
+            <div className={`${styles.clientInfo} flex items-center mt-4`}>
+              <div
+                className={`${styles.avatar} w-12 h-12 rounded-full bg-cover bg-center`}
+                style={{ backgroundImage: `url(${item.image})` }}
+              ></div>
+              <p className={`${styles.clientName} ml-3 text-xs sm:text-sm font-semibold text-gray-700`}>{item.name}</p>
             </div>
           </div>
         ))}

@@ -26,10 +26,6 @@
     border-radius: 50%; /* Optional: Make it circular if the logo is square */
     object-fit: cover; /* Ensure the image covers the container without distortion */
   }
-  
-   
-
-
 .navItem {
   display: flex;
   align-items: center;
@@ -136,4 +132,150 @@
 .button:hover {
   background-color: #fff;
 }
+/* Mobile and Tablet specific styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the sidebar and content */
+    height: auto; /* Allow for content to expand */
+    width: 100%; /* Ensure the container takes the full width */
+    background-color: #6c2dc7; /* Ensure the background color covers full width */
+  }
 
+  .sidebar {
+    width: 100%; /* Make the sidebar full width */
+    padding-top: 20px; /* Adjust padding for smaller screen */
+  }
+
+  .logo {
+    transform: translateX(0); /* Reset the transform for better visibility */
+    width: 80px; /* Resize the logo */
+    height: 80px; /* Resize the logo */
+    margin-bottom: 15px;
+  }
+
+  .navItem {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 15px;
+  }
+
+  .headerLink {
+    font-size: 16px; /* Adjust font size */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Space between header links */
+  }
+
+  .homeButton {
+    padding: 8px 15px; /* Adjust padding for smaller button */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .mainContent {
+    flex-direction: column; /* Stack the content vertically */
+    gap: 20px; /* Reduce gap between content items */
+    text-align: center; /* Center align text */
+  }
+
+  .image {
+    width: 150px; /* Resize the image */
+    height: 150px; /* Resize the image */
+    padding-top: 50px; /* Adjust padding */
+  }
+
+  .textContent {
+    max-width: 100%; /* Allow content to take full width */
+    padding-top: 30px; /* Adjust padding for small screens */
+  }
+
+  .title {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .health {
+    font-size: 40px; /* Reduce font size */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Adjust subtitle font size */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px; /* Reduce gap between buttons */
+    align-items: center; /* Center the buttons */
+  }
+
+  .button {
+    padding: 8px 15px; /* Adjust padding for buttons */
+    font-size: 14px; /* Adjust font size for buttons */
+  }
+
+  /* Adjust width and centering of "Sign In" and "Sign Up" buttons */
+  .signInButton, .signUpButton {
+    width: 70%; /* Set width to 70% of the container */
+    max-width: 300px; /* Set maximum width for better look */
+    margin: 0 auto; /* Center the buttons horizontally */
+  }
+}
+
+/* For even smaller screens (mobile phones) */
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Ensure full width */
+    background-color: #6c2dc7; /* Make sure background color covers full width */
+  }
+
+  .sidebar {
+    padding-top: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .logo {
+    width: 70px; /* Further reduce logo size */
+    height: 70px; /* Further reduce logo size */
+  }
+
+  .navItem {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+ .signInButton, .signUpButton { 
+    font-size: 12px; /* Adjust font size for buttons */
+    padding: 6px 12px; /* Further reduce button size */
+    width: 70%; /* Set width to 70% */
+    max-width: 250px; /* Set maximum width */
+    margin: 0 auto; /* Center the buttons horizontally */
+  }
+
+  .mainContent {
+    gap: 15px; /* Further reduce gap */
+  }
+
+  .image {
+    width: 120px; /* Resize image */
+    height: 120px; /* Resize image */
+  }
+
+  .textContent {
+    padding-top: 20px; /* Adjust padding for mobile screens */
+  }
+
+  .title {
+    font-size: 24px; /* Reduce font size further */
+  }
+
+  .health {
+    font-size: 30px; /* Reduce health font size */
+  }
+
+  .buttons {
+    gap: 15px; /* Adjust button gap */
+  }
+
+  .button {
+    font-size: 12px; /* Reduce button font size */
+  }
+}

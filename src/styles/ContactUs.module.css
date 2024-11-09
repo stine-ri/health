@@ -33,12 +33,13 @@
   border-left: 2px solid #6c2dc7; /* Vertical divider */
 }
 
- h1 {
+h1 {
   color: #6c2dc7; /* Header color */
   margin-bottom: 20px; /* Space below header */
   font-weight: bold; /* Bold header */
 }
-.container strong{
+
+.container strong {
   color: #6c2dc7;
 }
 
@@ -103,7 +104,6 @@
   font-weight: bold; /* Bold for Follow Us */
   margin-top: 20px; /* Space above Follow Us section */
   text-align: left; /* Align text to the left */
-  
 }
 
 .socialHandles {
@@ -114,4 +114,66 @@
 .socialHandles p {
   margin: 0; /* Remove default margin for paragraph */
   margin-right: 10px; /* Space between Follow Us and icons */
+}
+/* Mobile View Adjustments */
+@media (max-width: 640px) {
+  .contactContainer {
+    flex-direction: column; /* Stack the sections vertically */
+    width: 100%; /* Full width */
+    max-width: none; /* Remove max-width */
+    padding: 15px; /* Adjust padding */
+    height: auto; /* Make the height flexible */
+    margin: 20px 0; /* Add margin for spacing around the container */
+  }
+
+  .infoSection,
+  .formSection {
+    max-width: 100%; /* Ensure both sections span full width */
+    width: 100%; /* Full width for both sections */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .infoSection {
+    border-left: none; /* Remove vertical border on small screens */
+    border-bottom: 2px solid #6c2dc7; /* Add horizontal divider between sections */
+  }
+
+  .input,
+  .textarea,
+  .button {
+    width: 80%; /* Reduce width to 80% of container */
+    margin: 10px auto; /* Center inputs and button with some space */
+  }
+
+  .textarea {
+    height: 100px; /* Fixed height for textarea */
+  }
+
+  .button {
+    width: 80%; /* Ensure the button also has appropriate width */
+    margin: 15px auto; /* Adjust spacing for button */
+  }
+
+  .socialHandles {
+    flex-direction: column; /* Stack social media icons vertically */
+    align-items: center; /* Center align the icons */
+    margin-top: 20px; /* Add space above the social icons */
+  }
+
+  .socialIcon {
+    margin: 15px 0; /* Vertical margin for spacing between icons */
+    font-size: 28px; /* Slightly increase icon size for better visibility */
+  }
+
+  .followUs {
+    font-weight: bold; /* Bold for Follow Us */
+    margin-top: 20px; /* Space above Follow Us section */
+    text-align: center; /* Center the Follow Us text */
+    color: #6c2dc7; /* Color the text to match the brand */
+  }
+
+  .socialHandles p {
+    margin: 0 0 10px 0; /* Add margin below the "Follow Us" text */
+    color: #6c2dc7; /* Style the "Follow Us" text */
+  }
 }

@@ -1,0 +1,98 @@
+/* Apply styles only for the BookDoctor component */
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ensure the background covers the full viewport */
+    background-color: #6c2dc7; /* Purple background */
+  }
+  
+  .container {
+    background-color: white; /* White background for the container */
+    color: black; /* Text color inside the container */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Reduced width for the container */
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center the form items horizontally */
+  }
+  
+  /* Label and input group styling */
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the inputs */
+    width: 100%; /* Ensure the form occupies full width */
+    gap: 8px;
+  }
+  
+  /* Label styling */
+  .label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    margin-left:80px;
+    gap: 8px; /* Space between icon and text */
+    width: 100%; /* Ensure the label stretches the full width */
+  }
+  
+  /* Icon styling */
+  .icon {
+    color: Purple; /* Icon color */
+    font-size: 18px; /* Icon size */
+  }
+  
+  /* Input field styling */
+  .input {
+    width: 70%; /* Reduced width for input fields */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #6c2dc7; /* Border color on focus */
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .submitButton {
+    background-color: #6c2dc7; /* Button background color */
+    color: black;
+    padding: 12px 20px;
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%; /* Reduced button size to half */
+    margin-top: 20px; /* Added space above button */
+  }
+  
+  .submitButton:hover {
+    background-color: Purple; /* Button hover effect */
+  }
+  

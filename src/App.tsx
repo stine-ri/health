@@ -13,10 +13,14 @@ import Diagnostics from './components/Diagnostics';
 import Doctors from './components/Doctors';
 import ClientFeedback from './components/ClientFeedback';
 import TrainWithUs from './components/TrainWithUs';
+import BookDoctor from './components/BookDoctor';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 const App: React.FC = () => {
   return (
     <Router>
+      <ToastContainer /> {/* Add the ToastContainer for notifications */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signIn" element={<SignIn />} />
@@ -30,7 +34,8 @@ const App: React.FC = () => {
         <Route path="/diagnostics" element={<Diagnostics/>}/>
         <Route path="/doctors" element={<Doctors/>}/>
         <Route path="/feedback" element={<ClientFeedback/>}/> {/* Add the client feedback route */}
-        <Route path="/train" element={<TrainWithUs/>}/> 
+        <Route path="/train" element={<TrainWithUs/>}/>
+        <Route path="/book" element={<BookDoctor/>}/> {/* Add the book doctor route */}
         {/* Add other routes for diagnostics, profile, etc. */}
       </Routes>
     </Router>
