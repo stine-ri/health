@@ -2,41 +2,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
-  background-color: #6c2dc7; /* Body background color */
+  height: 100vh;
+  background-color: #6c2dc7;
   padding: 20px;
 }
 
 .contactContainer {
-  background-color: white; /* Container background color */
-  border-radius: 10px; /* Rounded corners */
-  display: flex; /* Flexbox for layout */
-  width: 70%; /* Reduced width of container */
-  max-width: 900px; /* Maximum width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  width: 70%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contactContainer:hover {
-  transform: scale(1.02); /* Slightly scale up on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.formSection {
-  flex: 1; /* Take up equal space */
-  padding: 20px; /* Padding inside form section */
+.formSection, .infoSection {
+  flex: 1;
+  padding: 20px;
 }
 
 .infoSection {
-  flex: 1; /* Take up equal space */
-  padding: 20px; /* Padding inside info section */
-  border-left: 2px solid #6c2dc7; /* Vertical divider */
+  border-left: 2px solid #6c2dc7;
 }
 
 h1 {
-  color: #6c2dc7; /* Header color */
-  margin-bottom: 20px; /* Space below header */
-  font-weight: bold; /* Bold header */
+  color: #6c2dc7;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .container strong {
@@ -44,136 +42,130 @@ h1 {
 }
 
 .contactInfo {
-  margin-top: 10px; /* Space above contact info */
+  margin-top: 10px;
 }
 
 .contactInfo p {
-  font-weight: bold; /* Bold text for contact info */
-  margin: 15px 0; /* Increased margin for spacing */
+  font-weight: bold;
+  margin: 15px 0;
 }
 
 .icon {
-  color: purple; /* Icon color */
-  margin-right: 10px; /* Space between icon and text */
+  color: purple;
+  margin-right: 10px;
 }
 
-.input,
-.textarea {
-  width: 80%; /* Width for input boxes */
-  padding: 10px; /* Padding inside input */
-  border: 1px solid #6c2dc7; /* Border color */
-  border-radius: 5px; /* Rounded corners */
-  margin-bottom: 20px; /* Space below inputs */
+.input, .textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #6c2dc7;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .textarea {
-  height: 100px; /* Fixed height for textarea */
+  height: 100px;
 }
 
 .button {
-  background-color: #6c2dc7; /* Button background color */
-  color: white; /* Button text color */
-  padding: 10px 0; /* Padding inside button */
-  border: none; /* No border */
-  border-radius: 50px; /* Fully rounded corners */
-  width: 60%; /* Width for button */
-  cursor: pointer; /* Pointer on hover */
-  margin: 20px auto; /* Centering button */
-  display: block; /* Ensuring button takes full width defined */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+  background-color: #6c2dc7;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 50px;
+  width: 60%;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-  background-color: #5b25a8; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly scale up on hover */
+  background-color: #5b25a8;
+  transform: scale(1.05);
 }
 
 .socialMedia {
-  display: flex; /* Flexbox for social icons */
-  justify-content: center; /* Center icons */
-  margin-top: 20px; /* Space above social media icons */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .socialIcon {
-  color: purple; /* Icon color */
-  margin: 0 10px; /* Space between icons */
-  font-size: 24px; /* Icon size */
+  color: purple;
+  margin: 0 10px;
+  font-size: 24px;
 }
 
 .followUs {
-  font-weight: bold; /* Bold for Follow Us */
-  margin-top: 20px; /* Space above Follow Us section */
-  text-align: left; /* Align text to the left */
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .socialHandles {
-  display: flex; /* Flexbox for layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 .socialHandles p {
-  margin: 0; /* Remove default margin for paragraph */
-  margin-right: 10px; /* Space between Follow Us and icons */
+  margin: 0;
+  margin-right: 10px;
 }
+
 /* Mobile View Adjustments */
 @media (max-width: 640px) {
   .contactContainer {
-    flex-direction: column; /* Stack the sections vertically */
-    width: 100%; /* Full width */
-    max-width: none; /* Remove max-width */
-    padding: 15px; /* Adjust padding */
-    height: auto; /* Make the height flexible */
-    margin: 20px 0; /* Add margin for spacing around the container */
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    padding: 15px;
+    height: 80vh; /* Limit height to 80% of viewport */
+    margin: 20px 0;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
   }
 
-  .infoSection,
-  .formSection {
-    max-width: 100%; /* Ensure both sections span full width */
-    width: 100%; /* Full width for both sections */
-    padding: 15px; /* Reduced padding for smaller screens */
+  .formSection, .infoSection {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
   }
 
   .infoSection {
-    border-left: none; /* Remove vertical border on small screens */
-    border-bottom: 2px solid #6c2dc7; /* Add horizontal divider between sections */
+    border-left: none;
+    border-bottom: 2px solid #6c2dc7;
   }
 
-  .input,
-  .textarea,
-  .button {
-    width: 80%; /* Reduce width to 80% of container */
-    margin: 10px auto; /* Center inputs and button with some space */
-  }
-
-  .textarea {
-    height: 100px; /* Fixed height for textarea */
+  .input, .textarea, .button {
+    width: 80%;
+    margin: 10px auto;
   }
 
   .button {
-    width: 80%; /* Ensure the button also has appropriate width */
-    margin: 15px auto; /* Adjust spacing for button */
+    width: 80%;
+    margin: 15px auto;
   }
 
   .socialHandles {
-    flex-direction: column; /* Stack social media icons vertically */
-    align-items: center; /* Center align the icons */
-    margin-top: 20px; /* Add space above the social icons */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .socialIcon {
-    margin: 15px 0; /* Vertical margin for spacing between icons */
-    font-size: 28px; /* Slightly increase icon size for better visibility */
+    margin: 15px 0;
+    font-size: 28px;
   }
 
   .followUs {
-    font-weight: bold; /* Bold for Follow Us */
-    margin-top: 20px; /* Space above Follow Us section */
-    text-align: center; /* Center the Follow Us text */
-    color: #6c2dc7; /* Color the text to match the brand */
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #6c2dc7;
   }
 
   .socialHandles p {
-    margin: 0 0 10px 0; /* Add margin below the "Follow Us" text */
-    color: #6c2dc7; /* Style the "Follow Us" text */
+    margin: 0 0 10px 0;
+    color: #6c2dc7;
   }
 }
