@@ -4,7 +4,6 @@
   background-color: #6c2dc7;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .sidebar {
@@ -18,14 +17,14 @@
   padding-top: 190px;
 }
 
-  .logo {
-   transform: translateX(-170px);
-    width: 100px; /* Smaller size for an icon look */
-    height: 100px; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the logo */
-    border-radius: 50%; /* Optional: Make it circular if the logo is square */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-  }
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .navItem {
   display: flex;
   align-items: center;
@@ -48,14 +47,15 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px;
-
+  flex-wrap: wrap;
 }
 
 .headerLink {
@@ -63,6 +63,7 @@
   text-decoration: none;
   font-size: 18px;
   margin-left: 20px;
+  white-space: nowrap;
 }
 
 .homeButton {
@@ -84,30 +85,33 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding-top: 10px;
+  padding: 20px;
   text-align: left;
-  
+  flex: 1;
 }
 
 .image {
   width: 200px;
   height: 200px;
-  padding-top: 100px;
+  object-fit: contain;
 }
 
 .textContent {
   max-width: 500px;
-  padding-top: 100px;
 }
 
 .title {
   color: #ffd700;
   font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
-.health{
+
+.health {
   color: #fff;
   font-size: 50px;
 }
+
 .subtitle {
   font-size: 20px;
   color: #ffffff;
@@ -116,7 +120,7 @@
 
 .buttons {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .button {
@@ -127,155 +131,156 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+  text-align: center;
+  min-width: 120px;
 }
 
 .button:hover {
   background-color: #fff;
 }
-/* Mobile and Tablet specific styles */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack the sidebar and content */
-    height: auto; /* Allow for content to expand */
-    width: 100%; /* Ensure the container takes the full width */
-    background-color: #6c2dc7; /* Ensure the background color covers full width */
-  }
 
+/* Tablet Styles */
+@media (max-width: 1024px) {
   .sidebar {
-    width: 100%; /* Make the sidebar full width */
-    padding-top: 20px; /* Adjust padding for smaller screen */
+    width: 180px;
+    padding: 20px;
+    padding-top: 150px;
   }
-
-  .logo {
-    transform: translateX(0); /* Reset the transform for better visibility */
-    width: 80px; /* Resize the logo */
-    height: 80px; /* Resize the logo */
-    margin-bottom: 15px;
-  }
-
-  .navItem {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  .header {
-    flex-direction: column; /* Stack header items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 15px;
-  }
-
-  .headerLink {
-    font-size: 16px; /* Adjust font size */
-    margin-left: 0; /* Remove left margin */
-    margin-top: 10px; /* Space between header links */
-  }
-
-  .homeButton {
-    padding: 8px 15px; /* Adjust padding for smaller button */
-    font-size: 14px; /* Adjust font size */
-  }
-
+  
   .mainContent {
-    flex-direction: column; /* Stack the content vertically */
-    gap: 20px; /* Reduce gap between content items */
-    text-align: center; /* Center align text */
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
   }
-
+  
   .image {
-    width: 150px; /* Resize the image */
-    height: 150px; /* Resize the image */
-    padding-top: 50px; /* Adjust padding */
+    width: 180px;
+    height: 180px;
   }
-
+  
   .textContent {
-    max-width: 100%; /* Allow content to take full width */
-    padding-top: 30px; /* Adjust padding for small screens */
+    text-align: center;
   }
-
-  .title {
-    font-size: 28px; /* Reduce font size */
-  }
-
-  .health {
-    font-size: 40px; /* Reduce font size */
-  }
-
-  .subtitle {
-    font-size: 18px; /* Adjust subtitle font size */
-  }
-
+  
   .buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 20px; /* Reduce gap between buttons */
-    align-items: center; /* Center the buttons */
-  }
-
-  .button {
-    padding: 8px 15px; /* Adjust padding for buttons */
-    font-size: 14px; /* Adjust font size for buttons */
-  }
-
-  /* Adjust width and centering of "Sign In" and "Sign Up" buttons */
-  .signInButton, .signUpButton {
-    width: 70%; /* Set width to 70% of the container */
-    max-width: 300px; /* Set maximum width for better look */
-    margin: 0 auto; /* Center the buttons horizontally */
+    justify-content: center;
   }
 }
 
-/* For even smaller screens (mobile phones) */
-@media (max-width: 480px) {
+/* Mobile Styles */
+@media (max-width: 768px) {
   .container {
-    width: 100%; /* Ensure full width */
-    background-color: #6c2dc7; /* Make sure background color covers full width */
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
   }
-
+  
   .sidebar {
-    padding-top: 10px; /* Reduce padding for smaller screens */
+    width: 100%;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
   }
-
-  .logo {
-    width: 70px; /* Further reduce logo size */
-    height: 70px; /* Further reduce logo size */
-  }
-
+  
   .navItem {
-    font-size: 12px; /* Further reduce font size */
+    margin: 5px 10px;
+    font-size: 14px;
   }
-
- .signInButton, .signUpButton { 
-    font-size: 12px; /* Adjust font size for buttons */
-    padding: 6px 12px; /* Further reduce button size */
-    width: 70%; /* Set width to 70% */
-    max-width: 250px; /* Set maximum width */
-    margin: 0 auto; /* Center the buttons horizontally */
+  
+  .logo {
+    display: none;
   }
-
+  
+  .header {
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .headerLink {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
   .mainContent {
-    gap: 15px; /* Further reduce gap */
+    padding: 20px;
   }
-
+  
   .image {
-    width: 120px; /* Resize image */
-    height: 120px; /* Resize image */
+    width: 150px;
+    height: 150px;
   }
-
-  .textContent {
-    padding-top: 20px; /* Adjust padding for mobile screens */
-  }
-
+  
   .title {
-    font-size: 24px; /* Reduce font size further */
+    font-size: 28px;
   }
-
+  
   .health {
-    font-size: 30px; /* Reduce health font size */
+    font-size: 40px;
   }
-
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
   .buttons {
-    gap: 15px; /* Adjust button gap */
+    flex-direction: column;
+    gap: 15px;
   }
-
+  
   .button {
-    font-size: 12px; /* Reduce button font size */
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .sidebar {
+    gap: 8px;
+  }
+  
+  .navItem {
+    font-size: 12px;
+    margin: 5px;
+  }
+  
+  .navItem span {
+    margin-left: 5px;
+  }
+  
+  .header {
+    padding: 10px;
+  }
+  
+  .headerLink {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  
+  .homeButton {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .health {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  
+  .image {
+    width: 120px;
+    height: 120px;
   }
 }
